@@ -78,11 +78,11 @@ print(current_level[0].hex())
 
 
 ```python
-def merkle_root(hash_list):
+def merkle_root(hashes):
     '''Takes a list of binary hashes and returns the merkle root
     '''
-    # current level starts as hash_list
-    current_level = hash_list
+    # current level starts as hashes
+    current_level = hashes
     # loop until there's exactly 1 element
     while len(current_level) > 1:
         # current level becomes the merkle parent level
